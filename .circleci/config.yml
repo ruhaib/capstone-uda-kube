@@ -48,7 +48,7 @@ jobs:
             cat .circleci/eks/deployment.yaml
             echo "config is: "
             cat /root/.kube/config
-            kubectl apply --kubeconfig=/root/.kube/config -f .circleci/eks/deployment.yaml
+            kubectl apply --role-arn arn:aws:iam::266318413124:role/myEKSClusterRole --kubeconfig=/root/.kube/config -f .circleci/eks/deployment.yaml
 #      - kubernetes/create-or-update-resource:
 #          get-rollout-status: true
 #          resource-file-path: .circleci/eks/deployment.yaml
