@@ -40,7 +40,7 @@ jobs:
             apt install -y curl unzip
       - kubernetes/install-kubectl
       - aws-eks/update-kubeconfig-with-authenticator:
-          cluster-name: myHelloWorldCluster
+          cluster-name: my-eks-cluster
           aws-region: $AWS_REGION
       - kubernetes/create-or-update-resource:
           get-rollout-status: true
