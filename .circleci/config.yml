@@ -56,8 +56,8 @@ workflows:
           create-repo: true
           repo: nginx-hello-world
           tag: 'latest,$CIRCLE_WORKFLOW_ID'
-          aws-access-key-id: $AWS_ACCESS_KEY_ID
-          aws-secret-access-key: $AWS_SECRET_ACCESS_KEY
+          aws-access-key-id: "${AWS_ACCESS_KEY_ID}"
+          aws-secret-access-key: "${AWS_SECRET_ACCESS_KEY}"
 
           requires: [lint-test]
 
