@@ -45,7 +45,10 @@ jobs:
       - run:
           name: Kubectl Apply
           command: |
-            kubectl apply -f .circleci/eks/deployment.yaml
+            cat .circleci/eks/deployment.yaml
+            echo "config is: "
+            cat ~/.kube/config
+            kubectl apply --kubeconfig=~/.kube/config -f .circleci/eks/deployment.yaml
 #      - kubernetes/create-or-update-resource:
 #          get-rollout-status: true
 #          resource-file-path: .circleci/eks/deployment.yaml
