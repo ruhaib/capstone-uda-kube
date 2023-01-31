@@ -17,3 +17,5 @@ Environment variables, set in CircleCI configuration are as follows:
 * AWS_SECRET_ACCESS_KEY
 * AWS_REGION
 * AWS_ECR_REGISTRY_ID
+* PARAM_REGISTRY_ID
+* REGION
