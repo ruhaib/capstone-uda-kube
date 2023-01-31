@@ -48,6 +48,7 @@ jobs:
             cat .circleci/eks/deployment.yaml
             echo "config is: "
             cat /root/.kube/config
+            pwd
             kubectl apply --kubeconfig=/root/.kube/config -f .circleci/eks/deployment.yaml
 #      - kubernetes/create-or-update-resource:
 #          get-rollout-status: true
