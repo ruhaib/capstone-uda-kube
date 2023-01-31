@@ -30,8 +30,7 @@ jobs:
       - run:
           name: Apply parameters to kubernetes deployment script
           command: |
-            sed "s/<IMAGE_TAG>/$CIRCLE_WORKFLOW_ID/1" .circleci/eks/eks-cluster-config.yml | \
-              sed "s/<AWS_ECR_REGISTRY_ID>/$AWS_ECR_REGISTRY_ID/1" > .circleci/eks/deployment.yaml
+            sed "s/<IMAGE_TAG>/$CIRCLE_WORKFLOW_ID/1" .circleci/eks/eks-cluster-config.yml > .circleci/eks/deployment.yaml
             cat .circleci/eks/deployment.yaml
       - run:
           name: Install dependencies

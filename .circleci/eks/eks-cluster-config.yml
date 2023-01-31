@@ -26,7 +26,7 @@ spec:
                 - amd64
       containers:
       - name: nginx
-        image: <AWS_ECR_REGISTRY_ID>.dkr.ecr.us-east-1.amazonaws.com/nginx-hello-world:<IMAGE_TAG>
+        image: 266318413124.dkr.ecr.us-east-1.amazonaws.com/nginx-hello-world:<IMAGE_TAG>
         ports:
         - name: http
           containerPort: 80

@@ -8,7 +8,7 @@ Cloud DevOps Engineer Nanodegree Capstone Project using kubernetes, cloudformati
 ## AWS Kubernetes Cluster Creation
 `ekctl` was used to create the kubernetes cluster on AWS EKS using cloudformation.
 ```bash
-eksctl create cluster --name my-eks-cluster -f .circleci/eks/eks-cluster-config.yml
+eksctl create cluster --name my-eks-cluster
 ```
 
 ## CircleCI environment configuration 
