@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: ClusterConfig
+kind: Deployment
 
 metadata:
   name: my-eks-cluster
